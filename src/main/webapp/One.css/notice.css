@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+#header { 
+    position: relative; width: 100%; height: 175px; 
+}
+    /* #header1 {
+    width: 400px; height: 10px; position:absolute; top:0; right:500px; 
+} */
+    #header1 {  
+    width: 300px; position: absolute;top: 0; left: 50%;
+    transform: translate(-50% , 10px); 
+}
+    #header2 {  
+        position:absolute; top:0; right:0; cursor: pointer; 
+    }
+    #header2 img { 
+        width: 120px; 
+    }
+    input[id="icon"] {
+        display:none;
+    } 
+    
+    body{
+        height:5000px;
+    }
+    
+    input[id="icon"] + label{
+        position: relative;
+        display:block;
+        width:60px;
+        height:40px;
+        cursor:pointer;  /* 커서를 올려놓을 때 모양이 바뀐다. */
+    } 
+    
+    input[id="icon"] + label > span {
+        position: absolute;
+        display:block;
+        width:100%;
+        height:5px;
+        border-radius:30px;
+        background:#000;
+        transition: all 0.35s;  /* 진행되는 과정들을 천천히 보여줄 수 있다. 0.35초 동안 진행됨 */
+        z-index:2;
+    
+    }
+    
+    input[id="icon"] + label > span:nth-child(1) {
+        top:0px;
+    }
+    
+    input[id="icon"] + label > span:nth-child(2) {
+        top:50%;
+        transform: translateY(-50%);  /* 엘리먼트를 변형할 때 쓴다. 비틀거나 구부리거나 돌릴 때 . 여러가지로 모양을 바꿀 때 */
+    }
+    
+    input[id="icon"] + label > span:nth-child(3) {
+        bottom:0px;
+    }
+    
+    
+    input[id="icon"]:checked + label > span:nth-child(1) {
+        top:50%;
+        transform:translateY(-50%) rotate(45deg);
+    }
+    
+    input[id="icon"]:checked + label > span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    input[id="icon"]:checked + label > span:nth-child(3) {
+        bottom:50%;
+        transform:translateY(50%) rotate(-45deg);
+    }
+    
+    #icon + label + #header2 {
+        position:fixed;  /* 스크롤을 내리더라도 같은 위치에서 붙어다닌다. */
+        width:300px;
+        height:100%;
+        background:#333;
+        top:0px;
+        padding:60px 25px 25px 25px;
+        box-sizing:border-box;
+        left:-300px;
+        z-index:1;
+        transition: all 0.35s;
+    }
+    
+    #icon:checked + label + #header2 {
+        left:0px;
+    }
+    
+    #icon:checked + label + #header2 > ul > li > a {
+        color: white;
+    
+    }
+    .text_area {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+}
+title, writer {
+	display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+}
+
+
+    

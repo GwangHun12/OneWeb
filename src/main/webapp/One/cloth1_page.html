@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>옷 상세 페이지</title>
+        <link rel="stylesheet" href="../One.css/cloth1.css">
+    </head>
+    <body>
+        <div id="header">
+            <div id="header1">
+                <a href="../index.html">
+                    <img src="../img/emisLOGO.svg" alt="메인로고"></a>
+            </div>
+        </div>
+        <main id="main">
+            <div class="img_area">
+                <div class="img_area_item img_area_item_01">
+                    <img src="../img/cloth.jpg" alt="옷1">
+                </div>
+            </div>
+            <div class="text_area">
+                <label for="dd">상품명</label><input type="text" class="cloth cloth1" id="dd" placeholder="니트" disabled> <br>
+                <label for="ff">가격</label><input type="text" class="cloth cloth2" id="ff" placeholder="38,900원" disabled> <br>
+                <div class="size">
+                    <form action="" method="get">
+                        <fieldset>
+                            <legend>사이즈를 골라주세요.</legend>
+                            <select name="size" id="size">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <input type="submit" value="선택">
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="color">
+                    <form action="" method="get">
+                        <fieldset>
+                            <legend>색상을 골라주세요.</legend>
+                            <select name="color" id="color">
+                                <option value="red">RED</option>
+                                <option value="black">BLACK</option>
+                                <option value="white">WHITHE</option>
+                                <option value="blue">BLUE</option>
+                            </select>
+                            <input type="submit" value="선택">
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="buy">
+                    <form action="../One/buy_page.html" method="get">
+                        <input type="submit" value="구매하기">
+                    </form>
+                    <form action="../One/basket_Page.html" method="get">
+                        <input type="submit" value="장바구니">
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

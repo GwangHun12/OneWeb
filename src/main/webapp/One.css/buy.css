@@ -1,0 +1,16 @@
+#header {
+    position: relative; width: 100%; height: 175px;
+}
+#header1 {
+    width: 300px; position: absolute;top: 0; left: 50%;
+    transform: translate(-50% , 10px);
+}
+#main {
+    display: flex; justify-content: center; flex-wrap: wrap;
+}
+#main .img_area_item img { 
+    width: 700px;
+}
+.delivery {
+    padding: 30px;
+}

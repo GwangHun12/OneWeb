@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>장바구니</title>
+        <link rel="stylesheet" href="../One.css/basket.css">
+    </head>
+    <body>
+        <div id="header">
+            <div id="header1">
+                <a href="../index.html">
+                    <img src="../img/emisLOGO.svg" alt="메인로고"></a>
+            </div>
+        </div>
+        <main id="main">
+        <table class="cart__list">
+            <form>
+                <thead>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td colspan="2">상품정보</td>
+                        <td>옵션</td>
+                        <td>상품금액</td>
+                        <td>배송비</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart__list__detail">
+                        <td><input type="checkbox"></td>
+                        <td><img src="../img/cloth.jpg" alt="cloth"></td>
+                        <td><a href="#">니트</a><span class="cart__list__smartstore"> Emis</span>
+                            <p>Emis니트</p>
+                            <sapn class="price">38,900원</sapn><span
+                                style="text-decoration: line-through; color: lightgray;">119,000</span>
+                        </td>
+                        <td class="cart__list__option">
+                            <p>사이즈 : L <br> 색상 : black</p>
+                            <button class="cart__list__optionbtn">주문조건 추가/변경</button>
+                        </td>
+                        <td><span class="price">38,900원</span><br>
+                            <button class="cart__list__orderbtn">주문하기</button>
+                        </td>
+                        <td>무료</td>
+                    </tr>
+                    <tr class="cart__list__detail">
+                        <td style="width: 2%;"><input type="checkbox"></td>
+                        <td style="width: 13%;">
+                            <img src="../img/cloth1.jpg" alt="cloth1">
+                        </td>
+                        <td style="width: 27%;"><a href="#">후드집업</a><span class="cart__list__smartstore"> Emis</span>
+                            <p>Emis 후드집업</p>
+                            <span class=" price">43,000원</span>
+                        </td>
+                        <td class="cart__list__option" style="width: 27%;">
+                            <p>사이즈 : L <br> 색상 : black</p>
+                            <button class="cart__list__optionbtn">주문조건 추가/변경</button>
+                        </td>
+                        <td style="width: 15%;"><span class="price">43,000원</span><br>
+                            <button class="cart__list__orderbtn">주문하기</button>
+                        </td>
+                        <td style="width: 15%;">무료</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><input type="checkbox"> <button class="cart__list__optionbtn">선택상품 삭제</button>
+                            <button class="cart__list__optionbtn">선택상품 찜</button>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </form>
+        </table>
+        <div class="cart__mainbtns">
+            <form action="../One/main1.html" method="get">
+            <button class="cart__bigorderbtn left">쇼핑 계속하기</button></form>
+            <form action="../One/buy_page.html" method="get">
+            <button class="cart__bigorderbtn right">주문하기</button></form>
+        </div>
+    </section>
+</main>
+    </body>
+</html>

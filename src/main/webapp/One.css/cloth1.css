@@ -1,0 +1,70 @@
+#header {
+    position: relative; width: 100%; height: 175px;
+}
+#header1 {
+    width: 300px; position: absolute;top: 0; left: 50%;
+    transform: translate(-50% , 10px);
+}
+/* #main .img_area { 
+    display: flex;justify-content: left; flex-wrap: wrap;
+} */
+#main {
+    display: flex; justify-content: center; flex-wrap: wrap;
+}
+#main .img_area_item img { 
+    width: 600px;
+}
+.text_area {
+    font-size: 30px;
+    padding: 30px;
+}
+input::placeholder {
+    opacity: 1;
+}
+input {
+    width: 460px;
+    padding: 10px;
+}
+
+.text_area {
+width: 460px;
+padding: 10px;
+}
+
+
+
+body {
+padding: 20px;
+box-sizing: border-box;
+}
+
+div + div {
+margin-top: 20px;
+}
+
+label {
+display: block;
+margin-bottom: 10px;
+font-weight: bold;
+color: #666;
+}
+/* legend {
+    width: 460px;
+    padding: 10px;
+} */
+fieldset {
+    margin-top: 10px;
+    width: 435px;
+}
+[type=submit] {
+    width : 100px
+}
+.size {
+    width: 70px;
+}
+.color {
+    width: 700px;
+}
+.buy {
+    display: flex; justify-content: space-evenly;
+}

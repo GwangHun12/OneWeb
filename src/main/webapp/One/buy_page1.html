@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>구매 페이지</title>
+        <link rel="stylesheet" href="../One.css/buy.css">
+
+    </head>
+    <body>
+        <div id="header">
+            <div id="header1">
+                <a href="../index.html">
+                    <img src="../img/emisLOGO.svg" alt="메인로고"></a>
+            </div>
+        </div>
+        <main id="main">
+            <div class="img_area">
+                <div class="img_area_item img_area_item_01">
+                    <img src="../img/cloth1.jpg" alt="옷1">
+                </div>
+            </div>
+            <div class="delivery">
+                <h1>배송정보</h1>
+                <table>
+                    <tr>
+                        <td>주문자</td>
+                        <td><input type="text" name="orderer"></td>
+                    </tr>
+                    <tr>
+                        <td>휴대폰</td>
+                        <td>
+                            <input type="text" name="hp">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>우편번호</td>
+                        <td>
+                            <input type="text" name="zip">
+                            <input type="button" value="검색">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>기본주소</td>
+                        <td>
+                            <input type="text" name="addr1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>상세주소</td>
+                        <td><input type="text" name="addr2"></td>
+                    </tr>
+                </table>
+                <div class="payment">
+                    <h1>결제방법</h1>
+                    <div>
+                        <span>신용카드</span>
+                        <p>
+                            <label>
+                                <input type="radio" name="payment" value="type1">신용카드 결제
+                            </label>
+                            <label>
+                                <input type="radio" name="payment" value="type2">체크카드 결제
+                            </label>
+                        </p>
+                    </div>
+            </div>
+                <div class="final">
+                    <h2>최종결제 정보</h2>
+                    <table>
+                        <tr>
+                            <td>총</td>
+                            <td>1 건</td>
+                        </tr>
+                        <tr>
+                            <td>상품금액</td>
+                            <td>43,000</td>
+                        </tr>
+                        <tr>
+                            <td>할인금액</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>배송비</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>포인트 할인</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>전체주문금액</td>
+                            <td>43,000</td>
+                        </tr>
+                    </table>
+                    <form action="../One/main1.html" method="get">
+                    <input type="submit" value="결제하기" onclick="buy();">
+                </form>
+                <script>
+                    function buy() {
+                        document.querySelector("[type=submit]");
+                        alert("구매가 완료되었습니다.");
+                    }
+                </script>
+                </div>
+                </div>
+        </main>
+    </body>
+</html>

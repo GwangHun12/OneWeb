@@ -1,0 +1,44 @@
+#header {
+    position: relative; width: 100%; height: 175px;
+}
+#header1 {
+    width: 300px; position: absolute;top: 0; left: 50%;
+    transform: translate(-50% , 10px);
+}
+.text_area {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+}
+
+.sns img {
+    width: 170px;
+}
+.sns {
+    display: flex; justify-content: center;
+    font-size: 50px;
+    margin-top: 40px;
+}
+.info {
+    display: flex;
+    justify-content: space-evenly;
+}
+.info_1 {
+    display: flex; 
+    border: 1px solid;
+    width: 30%;
+}
+.info_2 {
+    display: flex; 
+    border: 1px solid;
+    width: 30%;
+}
+.info3 {
+    display: flex; 
+    border: 1px solid;
+    width: 30%;
+}
+
+#footer {
+    border: 1px solid black;
+}
